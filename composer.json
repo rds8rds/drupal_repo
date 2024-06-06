@@ -8,18 +8,27 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
-        "drupal/core-vendor-hardening": "^10.2"
+        "drupal/core-vendor-hardening": "^10.2",
+        "drupal/mysql56": "^1.7",
+        "drupal/stage_file_proxy": "^2.1",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -34,9 +43,12 @@
             "drupal/core-vendor-hardening": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "vendor-dir": "vendor",
+        "preferred-install": "dist"
     },
     "extra": {
         "drupal-scaffold": {

@@ -1,10 +1,12 @@
-/core
-/modules/contrib
-/themes/contrib
-/vendor
+#/core
+#/modules/contrib
+#/themes/contrib
+#/vendor
 /sites/default/files
 /sites/default/settings.local.php
-# /sites/default/settings.php (if containing sensitive information)
+#/sites/default/settings.php (if containing sensitive information)
 *.log
 *.bak
 *.tmp
+
+*.local

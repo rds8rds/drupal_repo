@@ -1,0 +1,15 @@
+name: Custom Theme
+type: theme
+description: "It is a simple Drupal theme"
+version: VERSION
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+base theme: false
+libraries:
+  - custom_theme/global-styling
+regions:
+  header: Header
+  menu: Main Menu
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
